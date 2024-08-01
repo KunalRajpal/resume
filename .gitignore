@@ -1,0 +1,61 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+*/.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# VS Code
+.vscode/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
+# Other LaTeX auxiliary files
+*.dvi
+*.pdf
+*.ps
+*.eps
+*.synctex
+*.thm
+*.nav
+*.snm
+*.bcf
+*.run.xml
+*.spl
+
+# Editors
+*.bak
+*~
+
+# Specific to your LaTeX build tool
+latexmkrc
