@@ -1,0 +1,345 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{soul} % for ul command
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome5}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\usepackage{xcolor}
+\definecolor{blueColor}{RGB}{121,154,204}  % Dark blue color
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\scshape\raggedright\large
+}{}{0em}{}[\color{black}\bfseries\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      %\textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\resumeSubSubItem}[2]{\resumeItem{#1 \hfill #2}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape {Kunal Rajpal}} \\ \vspace{1pt}
+    \faIcon{envelope}
+    \href{mailto:rajpal.kunal1@gmail.com}{\ul{rajpal.kunal1@gmail.com}} $|$
+    \faIcon{phone-square-alt}
+    \href{tel:12043333478}{\ul{204-333-3478}} $|$ 
+    %\faIcon{globe}
+    %\href{https://kunalrajpal.github.io}{\ul{portfolio}} $|$ 
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/kunal-rajpal/}{\ul{linkedin.com/in/kunal-rajpal/}} $|$
+    \faIcon{github}
+    \href{https://github.com/KunalRajpal}{\ul{github.com/KunalRajpal}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {University of Manitoba}{Expected Dec 2024}
+      {Bachelor of Computer Science Majors (Co-op), minor in Philosophy}{}
+      
+     \resumeItemListStart
+      %  \resumeItem{\emph{Relevant Coursework:} \\
+      % Data Structures and Algorithms, Software Engineering, Distributed Computing, Databases, Graphics, Human-Computer Interaction, Artificial Intelligence, Computer Networks, Computer Organization, Web Server Management, Research Methodologies, Industrial Project, Databases Implementation }
+        \resumeItem{Undergrad Research Award (2021 \& 2022), Alumni Assoc. Scholarship (2022), SSA Scholarship (2020 \& 2021)}
+
+     \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------Industry EXPERIENCE-----------------------
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\section{Industry Experience}
+
+
+
+  \resumeSubHeadingListStart
+  
+    %\resumeSubSubheading{ $|$ \normalfont{}}{}
+    \resumeSubheading{Royal Bank of Canada (RBC)}{\emph{\small{Toronto, Ontario}}}{Software Developer Co-op}{\normalfont{May 2024 -- Aug 2024}}
+
+    \resumeItemListStart
+    \resumeItem{Built a Mortgage Renewal tool with \textbf{Spring Boot}, \textbf{GraphQL}, \& \textbf{REST}, handling 2,000+ applications monthly}
+    \resumeItem{Developed a PR review agent developed with \textbf{GPT API} to automate code review for developer pull requests}
+    \resumeItem{Automated daily deployment process, achieving a \textbf{75\%} reduction in manual processing time by implementing a \textbf{Node} \& \textbf{TypeScript} based solution with scheduled \textbf{cron} job executions}
+    \resumeItem{Spearheaded the implementation of a GraphQL schema change process, \textbf{cutting UAT downtime} by over 90\%}
+    \resumeItemListEnd
+    
+    \resumeSubheading{Pollard Banknote Ltd}{\emph{\small{Remote}}}{Application Developer Co-op}{\normalfont{May 2023 -- Dec 2023}}
+    %\resumeSubSubheading{Software Developer Co-op $|$ \normalfont{Pollard Banknote Ltd}}{May 2023 -- Dec 2023}
+    \resumeItemListStart
+    \resumeItem{Built a full-stack application with \textbf{TypeScript/React.js} frontend and \textbf{reactive Java Spring Boot} backend}
+    \resumeItem{Engineered a scalable \textbf{AWS SES}-based email \textbf{microservice} with \textbf{WebFlux} for high concurrency \& low latency}
+    \resumeItem{Developed a \textbf{Python} tool for record-matching in a \textbf{MySQL} database from XML files, reducing processing time by \textbf{99.95\%} (from 2 hours to 13 seconds) and significantly improving data accuracy}
+    \resumeItem{Designed a comprehensive \textbf{JUnit} testing suite with 100\% service layer coverage and 350+ tests using \textbf{Mockito}}
+    \resumeItem{Boosted processing efficiency by \textbf{90\%} with \textbf{Python} automation for serial number extraction from \textbf{XML} file, streamlining \textbf{SQL} record management and converting data to \textbf{CSV} format}
+
+
+    %\resumeItem{Configured and \textbf{deployed} UAT/production environments using Rancher, enabling client access for MVP launch}
+    %\resumeItem{Reduced new developer onboarding time by 50\%  by developing environment setup \textbf{Powershell} \& \textbf{Bash} scripts}
+
+    \resumeItemListEnd
+
+    
+    \resumeSubSubheading{Bioinformatics Lab, University of Manitoba}{\emph{\small{Remote}}}
+    \resumeSubSubItem{\textit{Software Developer}}{May 2021 -- Aug 2021 \& May 2022 -- Aug 2022 }
+        \resumeItemListStart
+            \resumeItem{Optimized cherry-picking distance calculation by \textbf{50\%} with a \textbf{C++} package for \textbf{Newick Format} representation}
+            \resumeItem{Published \href{https://gesort.cs.umanitoba.ca/}{\ul{GeSort}}, a genome sorting, citizen science game for \textbf{iOS} by migrating build from \textbf{WebGL} to iOS store}
+            %\resumeItem{Ensured secure communication between the \textbf{Node.js} server and the game by transitioning from HTTP to HTTPS }
+            %\resumeItem{Successfully resolved the game build process and \textbf{C\#} compilation errors by removing problematic dependencies}
+        \resumeItemListEnd
+    %\resumeSubSubItem{\textit{Software Developer}}{}
+        %\resumeItemListStart
+            %\resumeItem{Optimized cherry-picking distance calculation by \textbf{50\%} with a \textbf{C++} package for \textbf{Newick Format} representation}
+            %\resumeItem{Optimized cherry-picking distance calculation by \textbf{50\%} for two phylogenetic networks through the development of a \textbf{C++} package, implementing \textbf{Newick format} integration on reticulation nodes for better \textbf{tree analysis}}
+            %\resumeItem{Selected out of 200+ applicants for an esteemed research program by identifying research areas \& supervisors}
+        %\resumeItemListEnd
+    
+
+
+%write how you increase the efficency of the team in general
+%your daily tasks and the the help they provide 
+%organization, effective communciation
+% \resumeSubSubheading{Office Assistant $|$ \href{https://umanitoba.ca/extended-education/}{\small{\normalfont{\emph{\underline{Extended Education, University of Maniotoba}}}}}}{Jun. 2022 -- Apr. 2023}
+%     \resumeItemListStart
+%     \resumeItem{Maintains and creates spreadsheets, serving as \textbf{database} for all class-lists, student records and more}
+%     \resumeItem{Collaborates with multiple teams, Program Coordinators, and Instructors to ensure smooth program delivery}
+%     \resumeItemListEnd
+
+%
+%    \resumeSubheading
+%      {\href{https://www.linkedin.com/company/skipthedishes/}{Operations Specialist}}{Dec. 2019 -- Jun. 2022}
+%      {\href{https://www.justeattakeaway.com}{ SkipTheDishes}}{Winnipeg, MB}
+%      \resumeItemListStart
+%        \resumeItem{Utilizes effective communication skills and detail orientation to correspond with clients}
+%        \resumeItem{Assesses problems with live orders and provides solutions to over 75+ orders everyday}
+%        \resumeItem{Maintain solid customer and restaurant partner relationships by handling questions and concerns with speed and professionalism}
+%    \resumeItemListEnd
+%
+
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROJECTS------------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        % \resumeProjectHeading
+        %   { \faIcon{github} \href{https://github.com/KunalRajpal/book-store}{\textbf{\ul{Book Store Management System}}} $|$ \small{\emph{Golang, GORM, Gorilla Mux, PostgreSQL}}}{Jan 2024}
+        %   \resumeItemListStart
+        %   \resumeItem{Developed a \textbf{Golang}-based REST \textbf{API} for CRUD operations in a Book Store Management System}
+        %   \resumeItem{Utilized \textbf{GORM} for efficient PostgreSQL database interactions \& \textbf{Gorilla Mux} for routing and request handling}
+        % \resumeItemListEnd
+        
+        \resumeProjectHeading
+          { \faIcon{github} \href{https://github.com/KunalRajpal/DeepRacer}{\textbf{\ul{AWS DeepRacer Competition}}} $|$ \small{\emph{Python, Reinforcement Learning}}}{Sep 2023}
+            \resumeItemListStart
+                \resumeItem{Developed Proximal Policy Optimization (PPO) \textbf{reinforcement learning} algorithm for \textbf{AWS Deep Racer}}
+                \resumeItem{Achieved lap times of \textbf{10.49}s (fastest), 11.43s, and 11.93s by optimizing speed, heading, and steering parameters}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+          { \faIcon{github} \href{https://github.com/KunalRajpal/Fingerspelling-Recognition}{\textbf{\ul{Sign Language Recognition}}} $|$ \small{\emph{TensorFlow, MediaPipe, Keras }}}{Aug 2023}
+          \resumeItemListStart
+          \resumeItem{Obtained an accuracy rate of \textbf{65\%} in Fingerspelling recognition by training a \textbf{Transformer} model using \textbf{Keras}}
+          \resumeItem{Significantly increased efficiency by preprocessing \textbf{200GB+} parquet data files to TFRecords using \textbf{TensorFlow}}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          { \faIcon{github} \href{https://github.com/zewey/depth-lib}{\textbf{\ul{Depth Camera-based Touchscreen}}} $|$ \small{\emph{Python}, \emph{OpenCV}, \emph{NumPy}, \emph{\href{https://docs.google.com/document/d/1W3fRfSWLOeE0zj0azPDsQ3eCWkjedZylvoxNVIfPrCw/edit?usp=sharing}{\ul{Report}}}}}{Apr 2023}
+          \resumeItemListStart
+          \resumeItem{Constructed a proof-of-concept of touch-detection on non-touch surfaces for Canadian Musuem of Human Rights}
+          %\resumeItem{Contributed to open-source development, by sharing code with \href{https://humanrights.ca/}{\ul{CMHR}} for potential touch-detection applications}
+          \resumeItem{Attained precise object edge detection and enhanced object isolation through effective background removal}
+        \resumeItemListEnd
+
+
+        \resumeProjectHeading
+          { \faIcon{github} \href{https://github.com/COMP4560/trackr/tree/master/matter-trackr-android}{\textbf{\ul{Matter Trackr}}} $|$ \small{\emph{Kotlin, Java, Android Studio, \href{https://docs.google.com/document/d/1OcAMZFG4rWpjvi-ejKmgUgJxvIT56w1mz_1sSwFKNDI/edit?usp=sharing}{\ul{Report}}}}}{Dec 2022}
+          \resumeItemListStart
+          \resumeItem{Implemented an \textbf{Android} integration to collect data from \href{https://developers.home.google.com/matter/overview}{\ul{Matter}}-supported IoT devices \& transmit it to \href{https://github.com/COMP4560/trackr/tree/master}{\emph{\ul{Trackr}}}: an \textbf{open-source} web tool developed by fellow students at the University of Manitoba for \textbf{data visualization}}
+          \resumeItem{Improved the capability of \textbf{Google's Matter protocol} by introducing functionality to read temperature data}
+          \resumeItemListEnd
+          
+        %  \resumeProjectHeading
+        %   {\href{https://github.com/lylearcinas/Group-28_COMP3020}{\textbf{\underline{Betterreads}}} $|$ \small{\emph{JavaScript, HTML/CSS}}}{Nov 2022}
+        % \resumeItemListStart
+        %     \resumeItem{Designed a book browsing website allowing users to make/explore lists, rate books and, add friends}
+        %     \resumeItem{Focuses on ease of navigation, improving \textbf{learn-ability} and \textbf{memorability}}
+        % \resumeItemListEnd  
+        
+%        \resumeProjectHeading
+%          {\textbf{Builder Defender Game} $|$ \small{\emph{Unity, C\#}}}{Aug 2022}
+%            \resumeItemListStart
+%                \resumeItem{Implemented Builder-Defender with the ability to construct and gather resources, and defend base from enemies}
+%                \resumeItem{Constructed an enemy AI with attack logic and a health system}
+%            \resumeItemListEnd
+
+        
+        % \resumeProjectHeading
+        %   {\textbf{Eezy} $|$ \small{\emph{SQL, Android Studio, Java}}}{Apr 2022}
+        % \resumeItemListStart
+        %     \resumeItem{Collaborated with a team of 5 to develop a personal management application utilizing \textbf{agile methodologies}}
+        %     \resumeItem{Resolved \textbf{merge conflicts} and approved \textbf{pull requests} and developed the presentation website for the project}
+        % \resumeItemListEnd
+
+          
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------Technical SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript/TypeScript, Python, Java, Kotlin, C/C++, C\#, SQL, Golang} \\
+     \textbf{Technologies/Frameworks}{: React, AWS, Unix, Docker, Spring Boot, Node.js, MongoDB, GraphQL, Django}
+     %\textbf{Soft Skills}{: Communication, Leadership, Organization, Adaptability, Empathy, Multitasking, Collaboration} \\ %If you really need one more line, remove this
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+   
+% %-----------Honours and Awards--------------
+% \section{Honours and Awards}
+% \resumeSubHeadingListStart
+%     \resumeSubSubheading{\textbf{Undergraduate Student Research Award}}{2022 \& 2021}
+%     \resumeSubSubheading{\textbf{Alumni Association Community Leadership Scholarship}}{2022}
+%     \resumeSubSubheading{\textbf{Science Student Association Scholarship}}{2021 \& 2020}
+% \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------Leadership \& Volunteering-----------
+%\section{Leadership \& Volunteering}
+\section{Leadership }
+
+    \resumeSubHeadingListStart
+        
+        % \resumeSubSubheading{International Students' Representative $|$ \href{https://umsu.ca}{\small{\normalfont{\ul{University of Manitoba Students' Union}}}}}{Mar 2022 -- Feb 2023}
+        %     \resumeItemListStart
+        %         \resumeItem{Represented 9000+ students in political consultations with elected leaders on international student healthcare}
+        %         \resumeItem{Organized a demonstration with elected leaders \& 40+ participants, advancing the cause of international students}
+        %     \resumeItemListEnd
+            
+            
+        \resumeSubSubheading{President $|$ \href{https://devclub.ca}{\small{\normalfont{\ul{U of M .devClub}}}}}{May 2021 -- Apr 2022}
+                \resumeItemListStart
+                    \resumeItem{Led a team of \textbf{11} and organized \href{https://devclub.ca/devchamps}{\ul{coding competitions}} to foster innovation among \textbf{1500+ members}}
+                    \resumeItem{Coordinated attendance of 40+ students at \href{https://2022.cusec.net}{\ul{\textbf{CUSEC}}} \& organized local hack day with \textbf{60+ participants}}
+                \resumeItemListEnd  
+                
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+\end{document}
